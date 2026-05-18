@@ -1,0 +1,19 @@
+CompileFlags:
+  CompilationDatabase: examples/workstation/qhsmtst
+  Add:
+    - -include=<stdint.h>
+    - --target=x86_64-w64-mingw32
+    - -isystemD:/Software/Scoop/apps/gcc/15.2.0/x86_64-w64-mingw32/include
+
+Diagnostics:
+  UnusedIncludes: None
+  Suppress:
+    - readability-misleading-indentation
+  #   - pp_file_not_found
+  #   - unknown_typename
+  #   - unknown_typename_suggest
+  #   - undeclared_var_use
+  #   - unused-includes
+  #   - expected_expression
+  #   - -Wimplicit-function-declaration
+  #   - -Wbuiltin-requires-header
